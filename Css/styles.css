@@ -373,6 +373,8 @@ address {
     color: var(--secondary-text-color);
     margin-top: 20px;
     margin-left: 24px;
+    overflow: hidden;
+    position: relative;
 }
 
 .section-parraf {
@@ -433,6 +435,25 @@ address {
     border-style: solid;
     margin-bottom: 10px;
     cursor: pointer;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.card-animation {
+    position: absolute;
+    height: 294px;
+    width: 370px;
+
+    background: rgba(33, 150, 243, 0.9);
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    padding: 63px 24px;
+
+    transform: translateY(105%);
+    transition: transform 250ms ease;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+
 }
 
 .max-container-item {
@@ -442,8 +463,8 @@ address {
     justify-content: space-between;
     justify-content: space-between;
     cursor: pointer;
-
-
+    position: relative;
+    overflow: hidden;
 
 }
 
@@ -453,6 +474,19 @@ address {
 
 .max-container-item :hover {
     cursor: pointer;
+
+}
+
+
+
+.max-container-item :hover .card-animation {
+    transform: translateY(0%);
+    opacity: 100%;
+
+}
+
+.max-container-item .card-animation {
+    opacity: 0%;
 }
 
 .section-details-s {
