@@ -15,6 +15,7 @@ body {
     font-size: 14px;
     color: var(--primary-text-color);
     background-color: var(--primary-background-color);
+    position: relative;
 }
 
 aside {
@@ -516,4 +517,28 @@ address {
     justify-content: center;
     gap: 33px;
     padding-bottom: 94px;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.modal {
+    background: white;
+    color: #fff;
+    position: fixed;
+    height: 550px;
+    width: 550px;
+    transition: all .5s;
+    translate: unset;
+    margin-top: 250px;
+    margin-left: 700px;
 }
